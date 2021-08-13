@@ -1,0 +1,576 @@
+/*
+    font-family: 'Cormorant Garamond', serif;
+
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Qahiri', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+*html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Baloo Chettan 2', cursive;
+    line-height: 1.5;
+
+}
+
+.title-text{
+    text-align: center;
+    font-size: 40px;
+}
+
+/* navbar starts here ======*/
+#menu-bar{
+    width: 50px;
+    height: 10px; 
+    position: fixed;
+    margin: 50px 10px 10px 15px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.bar{
+    background: orange;
+    border-radius: 10%;
+    transition: 4s ;
+
+}
+
+#bar1{
+    width: 40px;
+    height: 10px;
+    transform: translateY(-4px);
+}
+
+#bar2{
+    width: 40px;
+    height: 10px;
+
+}
+
+#bar3{
+    width: 40px;
+    height: 10px;
+    transform: translateY(4px);
+
+}
+
+.change .bar{
+    background: #fff;
+}
+
+.change#bar1{
+    transform: translateY(6px);
+    rotate: z(45deg);
+}
+
+.change#bar3{
+    transform: translateY(-15px);
+    rotate: z(-45deg);
+}
+
+.change#bar2{
+    opacity: 0;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: orange;
+    font-size: 25px;
+
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.nav a:hover{ 
+    padding: 10px;   
+}
+
+.nav li{
+    margin: 20px 10px 10px 20px;
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+.nav{
+    display: none;
+}
+.change-btn{
+    display: block;
+}
+
+/*end here =-======*/
+
+
+
+/* header start */
+
+.header{
+    min-height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),
+    url('images/pizza.jpg') center/cover no-repeat fixed;
+    margin-top:auto ;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.hero .title{
+    color: white;
+    font-size: 50px;
+}
+
+.hero-button{
+   display: inline-block;
+   text-decoration: none;
+   text-transform: uppercase;
+   padding: 15px 20px;
+
+   border-radius: 200px;
+   border: 2px solid orange; 
+   font-weight: bolder;
+   color: #fff; 
+   cursor: pointer;
+   margin-top: 10px;
+   background: orange;
+
+
+}
+
+.hero-button:hover{
+    background: #fff;
+    color: orange;
+    border: none;
+}
+
+.pulsate{
+    animation: pulsate 3s ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: .3;
+
+}
+
+
+@-webkit-keyframes pulsate{
+    0%{
+        opacity: .3;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .3;
+    }
+}
+
+/* ends of header */
+
+
+/* start of about us */
+
+#about{
+    padding: 40px;
+
+}
+
+.about{
+    margin: 30px 0 ;
+    display: flex;
+}
+
+.about-icon{
+    font-size: 50px;
+    color: rgb(202, 70, 17);
+   margin-right: 20px;
+
+}
+
+.about-subtitle{
+    font-size: 35px;
+    font-family: 'Cormorant Garamond', serif;
+    
+}
+
+.about-info{
+    font-family: 'Handlee', cursive;
+    font-size: 25px;
+    margin-top: 10px;
+    line-height: 1.5;
+
+}
+
+.about-icon:hover .fas,
+.about-subtitle:hover{
+    transition: transform 1s ease, color 2s ease;
+    transform: translateY(-10px);
+    color: rgb(222, 228, 149);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+    .about-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between ;
+
+    }
+
+    .about{
+        flex: 0 0 calc(50% - 16px);
+    }
+}
+
+@media screen and (min-width: 972px) {
+    .about{
+        flex: 0 0 calc(33.3% - 16px);
+    }
+}
+/*end of about us */
+
+
+/* menu section starts */
+
+.menu-image{
+    min-height: 80vh;
+    background: url(images/cake.jpg)center/cover fixed no-repeat;
+}
+
+.menu-text{
+    min-width: 80vh;
+    align-items: center;
+    background:sandybrown ;
+    color: rgba(0,0,0);
+    padding: 40px 0;
+    columns:#000;
+
+}
+
+.menu-text-center{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu-text h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+
+}
+
+.menu-text p{
+    margin: 20px 0;
+    line-height: 1.5;
+
+}
+.menu-text a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 200px;
+    border: solid black 2px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    color: orange;
+    background: black;
+}
+
+.menu-text a:hover{
+    color: orange;
+    background: white;
+    border: none;
+
+}
+
+@media screen and (min-width:776px){
+    .menu{
+        display: flex;
+        background:sandybrown ;
+
+    }
+
+    .menu-text{
+        flex: 0 0 30%;
+    }
+
+    .menu-image{
+        flex: 0 0 50%;
+        clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+    }    
+}
+
+/* Menu section ends */
+
+/*social icons starts */
+
+#social-icon{
+    height: 150px;
+    text-align: center;
+    padding:50px 0 50px 0;
+    
+}
+
+#social-icon a{
+  
+
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px ;
+    font-size: 40px;
+    border-radius: 5px;
+    transition: transform 2s ease,color 2s ease;
+}
+
+#social-icon a:hover{
+    transform:translateY(-20px);
+}
+
+.facebook{
+    color: #3b5998;
+}
+.twitter{
+    color: #38a1f3;
+}
+.instragram{
+    color: #e1306c;
+}
+.plus{
+    color: #db4a39;
+}
+
+/*social icons ends */
+
+/* Number section starts here */
+.number{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),
+    url(images/sweetmeat.jpg)center/cover no-repeat fixed;
+    color: #fff;
+    padding: 50px 0;
+
+}
+
+.number p{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.number:hover{
+    color: orange;
+    cursor: pointer;
+}
+.number .fas{
+    font-size: 60px;
+    margin: 20px 0 ;
+}
+
+@media screen and (min-width: 576px) {
+    #number-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+
+    }
+    
+}
+@media screen and (min-width:992px ) {
+    #number-container{
+        grid-template-columns:repeat(4, 1fr) ;
+        max-width: 100%;
+        
+    }
+    
+}
+/*Number section ends here */
+
+
+
+
+/*===========food fusion starts here =============*/
+
+/* card design starts here */
+
+#food{
+    padding: 20px;
+}
+
+.food-container{
+    max-width: 90vh;
+    margin: 0 auto;
+}
+
+.food-card{
+    position: relative;
+    background: linear-gradient(rgba(205,96,0,0.7),rgba(205,96,0,0.7) );
+    margin: 20px 0 ;
+    color: #fff;
+    overflow: hidden;
+    padding: 2px;
+    border: 2px solid orange;
+    border-radius: 8px;
+    box-shadow:2px 5px 10px #cd6100 ;
+}
+
+#food img{
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    transition: transform 4s;
+}
+
+.img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: opacity 4s;
+    margin-bottom:10px ;
+}
+
+.img-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 4s;
+}
+
+.food-card:hover img{
+    opacity: 0.4s;
+    transform: scale(1.3);
+}
+
+.food-card:hover .img-text,
+.food-card:hover .img-footer{
+    opacity: 1;
+}
+
+.food-btn{
+    display: inline-block;
+   
+    text-decoration: none;
+    color:#000;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 180px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    outline: none;
+    border: none;
+
+}
+.food-btn:hover{
+  
+  color: rgb(255, 167, 2);
+}
+
+.fas{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+@media screen and (min-width:576px) {
+    .food-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 16px;
+        max-width: 100%;
+
+    }
+    
+}
+
+@media screen and (min-width:992px) {
+    .food-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 16px;
+
+        max-width: 100%;
+        
+
+    }
+    
+}
+
+
+
+/* card design ends here */
+
+/*============food fusion ends here============== */
+
+
+/*start gallery section */
+
+#gallery{
+    padding: 40px;
+    background:#fff;
+}
+
+.gallery-item{
+    background: linear-gradient(rgb(255, 172, 17) , rgb(230, 178, 83));
+}
+
+.gallery-item img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.gallery-item img:hover{
+    opacity: 0.5;
+   
+
+}
+
+@media screen and (min-width: 576px) {
+    #gallery-center{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    #gallery-center{
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+
+
+
+/* end of gallery section */
